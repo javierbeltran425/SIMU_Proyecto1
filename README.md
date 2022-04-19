@@ -22,7 +22,7 @@ Lenguje de programación C++
 
 ## Autores ✒️
 
-* **Mauricio** 
+* **Mauricio Enrique Palacios Palacios** 
 * **Sofia Alexandra Galvez Salguero** 
 * **Ricardo Javier Beltran Martinez**
 * **Susana Daniela Funes Escalante** 
