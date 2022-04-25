@@ -108,8 +108,8 @@ public:
 
         for (int i = 0; i < pos; i++)
         {
-            Lcopy = Lcopy->next
-        };
+            Lcopy = Lcopy->next;
+        }
 
         return Lcopy->data;
     }

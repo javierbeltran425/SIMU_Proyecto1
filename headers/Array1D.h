@@ -83,7 +83,7 @@ class Array1D: public Array<type>{
             if(verbose){
                 for (int i = 0; i < size; i++)
                 {
-                    cout << "Elemento #" << i + 1 << " is: " << array[i] << "\n";
+                    cout << "Eemento #" << i + 1 << " is: " << array[i] << "\n";
                 }
             }else{
                 cout << "[ ";

@@ -29,7 +29,7 @@ class DSG: public DS<type>{
 
             NodeG<type>* Gcopy = G;
 
-            while (Gcopy !== null)
+            while (Gcopy != NULL)
             {
                 cont ++;
 
@@ -104,7 +104,7 @@ class DSG: public DS<type>{
 
             L = temp->connections;
 
-            while (L !== NULL)
+            while (L != NULL)
             {
                 tempL = L;
 
@@ -124,7 +124,7 @@ class DSG: public DS<type>{
     bool search(type value) override {
         bool ans = false;
 
-        NodeGztype>* Gcopy = G;
+        NodeG<type>* Gcopy = G;
 
         while (Gcopy != NULL)
         {

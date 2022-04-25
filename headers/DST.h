@@ -134,7 +134,7 @@ public:
         return height(T);
     }
 
-    void insert(value) override
+    void insert(type value) override
     {
         NodeT<type> *temp = (NodeT<type> *)createNode();
 
