@@ -51,7 +51,7 @@ class DSG: public DS<type>{
         * Función para la inserción de datos en el grafo
         */
        void insert(int id, type value) override {
-           NodeG<type> temp = (NodeG<type>*) createNode();
+           NodeG<type>* temp = (NodeG<type>*) createNode();
 
            temp->id = id;
 

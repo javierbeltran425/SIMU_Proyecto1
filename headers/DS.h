@@ -2,14 +2,14 @@ template <typename type>
 
 class DS{
     private:
-        virtual void* createNode();
+        virtual void* createNode() = 0;
 
     public:
         virtual Node<type>* getRoot() = 0;
 
         virtual category getCategory() = 0;
 
-        virtual void create();
+        virtual void create() = 0;
 
         virtual int extension() = 0;
 
@@ -17,7 +17,7 @@ class DS{
 
         virtual void insert(int pos, type value) = 0;
 
-        virtual type extract(int pos);
+        virtual type extract(int pos) = 0;
 
         virtual void destroy() = 0;
 

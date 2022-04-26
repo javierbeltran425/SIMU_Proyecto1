@@ -43,7 +43,7 @@ public:
             Lcopy = Lcopy->next;
         }
 
-        return count;
+        return cont;
     }
 
     /*
@@ -78,9 +78,9 @@ public:
      */
     void insert(int pos, type value) override
     {
-        NodeDL<type> *temp = (NodeDL<type> *)createNode();
+        NodeDL<type>* temp = (NodeDL<type>*) createNode();
 
-        temp->value = value;
+        temp->data = value;
 
         NodeDL<type> *Lcopy = L;
 

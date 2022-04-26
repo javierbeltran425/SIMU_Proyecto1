@@ -72,7 +72,7 @@ class Array1D: public Array<type>{
 
             for (int i = size-1; i >= 0; i--)
             {
-                array2[size - (i + 1) = array[i]];
+                array2[size - (i + 1) ] = array[i];
             }
             destroy();
 

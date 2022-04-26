@@ -17,7 +17,7 @@ class Array{
 
         virtual type extract(Data pos) = 0;
 
-        virtual destroy() = 0;
+        virtual void destroy() = 0;
 
         virtual bool search(type value) = 0;
 
