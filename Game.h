@@ -16,23 +16,7 @@ class Game{
     public:
 
         static void mainMenu() {
-            int selectedOption;
-
-            do
-            {
-                if(selectedOption < 0 || selectedOption > 5) cout << "Ingrese una opcion valida";
-
-
-                showMainMenu();
-                
-                cout << "Ingrese su eleccion: ";
-                cin >> selectedOption;
-
-                
-            } while (selectedOption < 1 || selectedOption > 6);
-
-            cout << "WENAAASSSSS";
-            
+            showMainMenu();            
         }
 
 };
