@@ -226,6 +226,8 @@ class Arrays{
             //variable auxiliar
             ref.n = row; ref.m = column;
 
+            cout << value << "\nMIKE'n";
+
             //Se invoca el método insert() del objeto matrix
             matrix->insert(ref,value);
         }

@@ -58,6 +58,7 @@ int main(void)
     */
 
     Array<int> *array;
+    cout << "TIPO--- " << typeid(array).name() << endl;
 
     cout << "Probando creación de arreglo de enteros... ";
     Arrays<int>::create(&array, n);
@@ -79,12 +80,12 @@ int main(void)
     Arrays<Array<int> *>::create(&matrix, f, c);
 
     cout << "Llenando matriz de caracteres con valores... ";
-    for (int i = 0; i < f2 * c2; i++)
-        Arrays<Array<int> *>::insert(matrix, i / c2, i % c2, array);
+    for (int i = 0; i < f * c; i++)
+        Arrays<Array<int> *>::insert(matrix, i / c, i % c, array);
     cout << "OK\n";
 
     cout << "Mostrando la matriz de caracteres...\n";
-    Arrays<Array<int> *>::show(matrix, false); // false indica que no se necesita modo VERBOSE
+    Arrays<Array<int> *>::show(matrix, true); // false indica que no se necesita modo VERBOSE
 
     /*
         SECCION DE CODIGO PARA LA LISTA ENLAZADA DOBLE

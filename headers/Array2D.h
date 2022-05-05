@@ -40,6 +40,7 @@ class Array2D: public Array<type>{
         }
 
         void insert(Data pos, type value) override {
+            cout << "\n" << pos.n << " - " << pos.m << "\n";
             matrix[pos.n][pos.m] = value;
         }
 
@@ -86,7 +87,13 @@ class Array2D: public Array<type>{
         void show(bool verbose) override {
             if(verbose){
                 for(int i = 0; i < nrows*ncols; i++){
+                    //cout << "Tipo: " << typeid(matrix[i/ncols][i%ncols]).name() << endl;
+                    //cout << "Elemento en la celda [ " << i/ncols+1 << ", " << i%ncols+1 << " ] is: " << matrix[i/ncols][i%ncols] << "\n";
                     cout << "Elemento en la celda [ " << i/ncols+1 << ", " << i%ncols+1 << " ] is: " << matrix[i/ncols][i%ncols] << "\n";
+                    cout << "Mostrando el arreglo:" << endl;
+                    Array<int> *array = matrix[i/ncols][i%ncols];
+                    array->show(false);
+
                 }
             }else{
                 cout << "[\n";
