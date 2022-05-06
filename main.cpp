@@ -5,8 +5,8 @@
 using namespace std;
 
 #include "Game.h"
-#include "headers/dynamicDS.h"
 #include "headers/staticDS.h"
+#include "headers/dynamicDS.h"
 
 template <typename type>
 Data Arrays<type>::ref = Data();
@@ -102,11 +102,12 @@ int main(void)
         Dynamic_Structures<Array<Array<int> *> *>::insert(DL, matrix);
 
     cout << "Mostrando lista...\n";
-    Dynamic_Structures<Array<Array<int> *> *>::show(DL, false);
+    Dynamic_Structures<Array<Array<int> *> *>::show(DL, true);
 
     /*
         SECCION DE CODIGO PARA ARBOL BINARIO
     */
+   /*
     DS<DS<Array<Array<int> *> *> *> *T;
     cout << "Probando creación de árbol... ";
 
@@ -115,20 +116,20 @@ int main(void)
 
     cout << "Probando inserción en árbol... ";
 
-    int datos[10] = {77, 84, 39, 72, 56, 78, 100, 72, 98, 17};
+    //int datos[10] = {77, 84, 39, 72, 56, 78, 100, 72, 98, 17};
 
     for (int i = 0; i < 10; i++)
         Dynamic_Structures<DS<Array<Array<int> *> *> *>::insert(T, DL);
 
     cout << "Mostrando árbol...\n";
-    Dynamic_Structures<DS<Array<Array<int> *> *> *>::show(T, false);
+    Dynamic_Structures<DS<Array<Array<int> *> *> *>::show(T, true);
 
     cout << "\n";
-
+*/
     /*
         SECCION DE CODIGO PARA EL GRAFO
     */
-
+/*
     DS<DS<DS<Array<Array<int> *> *> *> *> *G;
     Dynamic_Structures<DS<DS<Array<Array<int> *> *> *> *>::create(&G, GRAPH);
     cout << "OK\n";
@@ -140,7 +141,7 @@ int main(void)
     Dynamic_Structures<DS<DS<Array<Array<int> *> *> *> *>::show(G, false);
 
     cout << "Probando definición de conexiones para los nodos del grafo...\n";
-
+*/
     /*
     GRAFO A CONSTRUIR
 
@@ -153,7 +154,7 @@ int main(void)
     */
 
     // Definicion de la matriz que contiene las conexiones de cada nodo del grafo
-    // int M[5][4] = { { 1, 3, 4, -99 }, { 2, 3, 5, -99 }, { 3, 4, 1, 2 }, { 4, 3, 1, 5 }, { 5, 4, 2, -99 } };
+    //int M[5][4] = { { 1, 3, 4, -99 }, { 2, 3, 5, -99 }, { 3, 4, 1, 2 }, { 4, 3, 1, 5 }, { 5, 4, 2, -99 } };
 
     // Definiendo las conexiones
     // Dynamic_Structures<int>::define_connections(G, M);
@@ -161,10 +162,11 @@ int main(void)
     // cout << "Impresion del grafo con las conexiones ya establecidas\n";
     // Dynamic_Structures<int>::show(G,false);
 
+/*
     cout << endl
          << endl
          << endl;
-
+*/
     Game::mainMenu();
 
     do
@@ -179,12 +181,12 @@ int main(void)
 
     cout << "WENAAASSSSS";
 
-    Dynamic_Structures<DS<DS<Array<Array<int> *> *> *> *>::destroy(G);
-    Dynamic_Structures<DS<Array<Array<int> *> *> *>::destroy(T);
+    //Dynamic_Structures<DS<DS<Array<Array<int> *> *> *> *>::destroy(G);
+    //Dynamic_Structures<DS<Array<Array<int> *> *> *>::destroy(T);
     Dynamic_Structures<Array<Array<int> *> *>::destroy(DL);
 
-    delete G;
-    delete T;
+    //delete G;
+    //delete T;
     delete DL;
     delete matrix;
 

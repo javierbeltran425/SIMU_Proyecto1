@@ -220,6 +220,11 @@ public:
             {
                 cout << "Element #" << index << " is: " << Lcopy->data << "\n";
 
+                cout << "Mostrando matriz desde lista: " << endl;
+                Array<Array<int> *> *matrix = Lcopy->data;
+
+                matrix->show(true);
+
                 index++;
 
                 Lcopy = Lcopy->next;

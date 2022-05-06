@@ -74,6 +74,7 @@ struct NodeDL: Node<type>{
 */
 template <typename type>
 struct NodeT: Node<type>{
+    int longitud;
     NodeT<type>* parent;
     NodeT<type>* left;
     NodeT<type>* right;
@@ -425,6 +426,7 @@ class Dynamic_Structures{
         static void insert(DS<type>* var, type value){
             //Se invoca el método insert() del objeto var enviando el valor
             //<value> a insertar
+            //cout << "\nMIKE " << value << " MIKE\n";
             var->insert(value);
         }
         /*

@@ -1,3 +1,4 @@
+//#include "staticDS.h"
 /*
     Implementación de la interfaz DS, definida en "DS.h", para una
     lista enlazada simple.
@@ -116,6 +117,7 @@ class DSSL: public DS<type>{
             NodeSL<type>* temp = (NodeSL<type>*) createNode();
             //Se coloca el valor <value> en el nuevo nodo
             temp->data = value;
+            //cout << "\nMIKE " << temp << " - " << value << " MIKE\n";
 
             //Se verifica si la lista se encuentra actualmente vacía
             if(L == NULL)
@@ -400,6 +402,16 @@ class DSSL: public DS<type>{
                     //haciendo uso de la variable auxiliar
                     cout << "Element #" << index << " is: " << Lcopy->data << "\n";
                     //Se le suma 1 a la variable auxiliar
+                    //cout << "Mostrando matriz desde lista: " << endl;
+                    //Array<Array<int> *> *matrix = Lcopy->data;
+
+                    /*Arrays<Array<int> *>::create(&matrix, 3, 4);
+
+                    for (int i = 0; i < 3 * 4; i++)
+                        Arrays<Array<int> *>::insert(matrix, i / 4, i % 4, Lcopy->data);
+                    */
+                    //matrix->show(true);
+                    
                     index++;
 
                     //Se avanza al siguiente nodo de la lista
