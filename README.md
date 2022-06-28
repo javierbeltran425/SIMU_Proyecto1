@@ -2,30 +2,34 @@
 
 ## Objetivo del proyecto 📖
 
-Fortalecer las habilidades de manipulación de estructuras de datos estáticas y dinámicas utilizando el
-lenguaje de programación C++.
+Desarrollar una simulación bidimensional para un fenómeno ficticio que permita aplicar todos los
+pasos del Método de los Elementos Finitos y su respectiva codificación utilizando el lenguaje de
+programación C++.
 
 
 ## Construido con 🛠️
-Lenguje de programación C++
+Lenguje de programación C++.
+
+## Herramientas adicionales  
+GiD 16.0.
+
 
 ## Niveles de arquitectura ⛓
-* **Nivel 1 (Grafo) ->**
-* **Nivel 2 (Árboles) ->**
-* **Nivel 3 (Listas) ->**
-* **Nivel 4 (Matrices) ->**
-* **Nivel 5 (Arreglos) ->**
+* **Parte I: Aplicación del Método de los Elementos Finitos.**
+* **Parte II: Definición del Dominio.**
+* **Parte III: Implementación en C++.**
+* **Parte IV: Resultados de la simulación.**
 
 
-## Franquicia 🎮
-* **Digimon.** 
+## Pokemon  
+* **Hatenna.** 
 
 ## Autores ✒️
 
-* **Mauricio Enrique Palacios Palacios** 
-* **Sofia Alexandra Galvez Salguero** 
-* **Ricardo Javier Beltran Martinez**
-* **Susana Daniela Funes Escalante** 
+* **Carlos Francisco Estevez Lemus #00120218** 
+* **Sofia Alexandra Galvez Salguero #00154517** 
+* **Ricardo Javier Beltran Martinez #00019315**
+* **Susana Daniela Funes Escalante #00158916** 
 
 
 
